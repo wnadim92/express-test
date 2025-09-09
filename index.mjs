@@ -16,8 +16,8 @@ app.get("/", (req, res) => {
         month: 'short',
         day: 'numeric'
     });
-    console.log(`${helloMessage} at ${now} EST`);
-    res.send(`${helloMessage} at ${now} EST\n`);
+    console.log(`${helloMessage} at ${now}`);
+    res.send(`${helloMessage} at ${now}\n`);
 })
 
 app.listen(PORT, () => {
